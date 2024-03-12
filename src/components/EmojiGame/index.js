@@ -46,10 +46,10 @@ class EmojiGame extends Component {
       if (emojiListLength - 1 === clickedEmojiListLength) {
         this.finishGameAndGetTopScore(emojiListLength)
       }
-    }
+    
     this.setState(prevState => ({
       clickedEmojiList: [...prevState.clickedEmojiList, id],
-    }))
+    }))}
   }
 
   shuffledEmojisList = () => {
